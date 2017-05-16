@@ -1,9 +1,22 @@
 .projects{
-  padding: 40px 15px;
-  background-color: #100f1c;
-  color: #FFFFFF;
+	padding: 40px 15px;
+	background-color: #100f1c;
+	color: #FFFFFF;
+}
+
+.exp{
+	padding: 40px 15px;
+	background-color: #f2f2f2;
+	color: #000000;
 }
 
 .featurette-divider{
-  border-color: #383748;
+	border-color: #383748;
+}
+
+.description {
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.4;
 }

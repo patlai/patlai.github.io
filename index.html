@@ -84,65 +84,66 @@
 </div>
 
 
+<div style = "background-color:#f2f2f2;">
+  <div class="container">
+    <div class="starter-template" id = "about">
+      <h1>About Me</h1>
+      <p class="lead">I am a third year student at McGill University pursuing a B. Eng in Software Engineering. I enjoy learning new things and continuously seek out new opportunities and projects to challenge myself, whether its learning new programming languages and technologies, or participating in hackathons and other coding events.
+        <br><br>
+        Besides programming and software, my biggest hobby is dragon boat. I have been selected twice for the Canadian National Team and am currently co-captain of the McGill club team.</p>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
-<div class="container">
-  <div class="starter-template" id = "about">
-    <h1>About Me</h1>
-    <p class="lead">I am a third year student at McGill University pursuing a B. Eng in Software Engineering. I enjoy learning new things and continuously seek out new opportunities and projects to challenge myself, whether its learning new programming languages and technologies, or participating in hackathons and other coding events.
-      <br><br>
-      Besides programming and software, my biggest hobby is dragon boat. I have been selected twice for the Canadian National Team and am currently co-captain of the McGill club team.</p>
-      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+          </ol>
 
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-          <li data-target="#myCarousel" data-slide-to="3"></li>
-        </ol>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="images/gamejam1.jpg">
+              <div class="carousel-caption">
+               <h3>McGill GameJam 2017</h3>
+             </div>
+           </div>
 
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-          <div class="item active">
-            <img src="images/gamejam1.jpg">
+           <div class="item">
+            <img src="images/robohacks.jpg" >
             <div class="carousel-caption">
-             <h3>McGill GameJam 2017</h3>
+             <h3>McGill RoboHacks 2017</h3>
            </div>
          </div>
 
          <div class="item">
-          <img src="images/robohacks.jpg" >
+          <img src="images/conu.jpg" width="100%">
           <div class="carousel-caption">
-           <h3>McGill RoboHacks 2017</h3>
+           <h3>ConUHacks II</h3>
          </div>
        </div>
 
        <div class="item">
-        <img src="images/conu.jpg" width="100%">
+        <img src="images/tg.jpg">
         <div class="carousel-caption">
-         <h3>ConUHacks II</h3>
+         <h3>Paddling with the True Grit Dragon Boat Club at Canadian Championships</h3>
        </div>
      </div>
-
-     <div class="item">
-      <img src="images/tg.jpg">
-      <div class="carousel-caption">
-       <h3>Paddling with the True Grit Dragon Boat Club at Canadian Championships</h3>
-     </div>
    </div>
- </div>
 
- <!-- Left and right controls -->
- <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-  <span class="glyphicon glyphicon-chevron-left"></span>
-  <span class="sr-only">Previous</span>
-</a>
-<a class="right carousel-control" href="#myCarousel" data-slide="next">
-  <span class="glyphicon glyphicon-chevron-right"></span>
-  <span class="sr-only">Next</span>
-</a>
+
+   <!-- Left and right controls -->
+   <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
 </div>
-
+</div>
 </div>
 
 </div><!-- /.container -->
@@ -160,8 +161,8 @@
           <button type="button" class="btn btn-default">Express.JS</button>
           <button type="button" class="btn btn-default">PostGreSQL</button>
           <p class="lead">Collaborated with engineers from LightSpeed Labs and 5 other university students to develop and integrate an open source gift card system with an existing ecommerce platform. 
-          <br>
-          This event was particularly interesting since factors such as integration and scalability had to be taken into consideration when building the project unlike other hackathons where any technology stack can be picked. 
+            <br>
+            This event was particularly interesting since factors such as integration and scalability had to be taken into consideration when building the project unlike other hackathons where any technology stack can be picked. 
           </p>
           <a href = "https://meii.itch.io/cat-simulator"><button type="button" class="btn btn-primary">View Project</button></a>
         </div>
@@ -285,10 +286,24 @@
     </div>
   </div>
 </div>
-<div style = "background: #181725">
+<div style = "background: #f2f2f2">
   <div class = "container" >
     <div class = "exp" id = "experience">
       <h1><center>Experience</center></h1>
+      <p class = "lead">Since May 2016, I have been working as a Software Developer at Sensequake, a Montreal-based startup that seeks to revolutionize the field of structural health monitoring and analysis through the use of sensing tests and innovative software. My role on the team was to develop the <a href = "http://www.sensequake.com/software">3-Dimensional Seismic Assessment (3D-SAM) software</a>. This is a Windows Desktop Application built in C# using .NET framework v4.5 and various open-source libraries such as Math .NET numerics, OxyPlot, and Helix3D.</p>
+      <center>
+        <img class="img-responsive" src="images/3dsam.png" width="70%">
+          <div class = "caption">
+            Implementation of Modal Analysis into the software
+          </div>
+      </center>
+      <p class = "lead">As the company is still very young and the team small, I was one of the only developers working on the project for a large portion of the time, and as a result had to make many challenging decisions regarding system architecture and implementation choices on my own. My current accomplishments include: Complete integration of Modal Analysis and processing of sensor data into the software, optimization of many algorithms that were previously prototyped in MatLab and Mathematica, redesigning the Application Interface using WPF to improve user experience, and improving various existing parts of the software such as building animation and data importing. the 3D-SAM software was recently <a href="http://blogs.autodesk.com/bim-and-beam/2017/04/21/sensing-tests-improve-reliability-of-structural-engineering/">in an article by AutoDesk.</a></p>
+      <!-- <div class="progress">
+      <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+          60%
+        </div>
+      </div> -->
+      
     </div>
   </div>
 </div>
