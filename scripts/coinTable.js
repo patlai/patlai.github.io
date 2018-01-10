@@ -3,7 +3,8 @@ var coinList = "";
 
 function refreshTable(){
   dataTable = $('#coinTable').DataTable({
-    iDisplayLength: -1
+    iDisplayLength: -1,
+    order: [[ 6, "desc" ]]
   });
   coinList = dataTable.rows().data();
 }
@@ -83,7 +84,7 @@ window.onload = function() {
               } 
               // resolve when row is filled
               resolve();
-              
+
           }).fail(function() { resolve(); })
         }));
 
