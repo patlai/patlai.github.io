@@ -80,10 +80,10 @@ window.onload = function() {
                 row.cells[6].innerHTML = numberWithCommas(parseInt(result["data"]["subscribers"]));
 
                 row.cells[7].innerHTML = (parseFloat(row.cells[3].innerHTML.replace(',','') ) / parseFloat(result["data"]["subscribers"]) ).toFixed(3);
-                resolve();
-              } else{
-                resolve();
-              }
+              } 
+              // resolve when row is filled
+              resolve();
+              
           }).fail(function() { resolve(); })
         }));
 
