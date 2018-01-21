@@ -26,7 +26,7 @@ window.onload = function() {
       allCoinsList = response;
       // iterate through the response and populate the table of coins
       var table = document.getElementById("coinTableHead");
-      for(var i = 0; i < allCoinsList.length; i++){
+      for(var i = 0; i < response.length; i++){
 
         // add a new row to the end of the table
         var rowCount = table.getElementsByTagName("tr").length;
@@ -44,11 +44,11 @@ window.onload = function() {
         var ratioCell = row.insertCell(7);
 
         // fill out the cells with the response info
-        nameCell.innerHTML = allCoinsList[i]["id"];
-        shortCell.innerHTML = allCoinsList[i]["symbol"];
-        priceCell.innerHTML = parseFloat(allCoinsList[i]["price_usd"]);
-        capCell.innerHTML = numberWithCommas(parseFloat(allCoinsList[i]["market_cap_usd"]));
-        volumeCell.innerHTML = numberWithCommas(parseFloat(allCoinsList[i]["24h_volume_usd"]));
+        nameCell.innerHTML = response[i]["id"];
+        shortCell.innerHTML = response[i]["symbol"];
+        priceCell.innerHTML = parseFloat(response[i]["price_usd"]);
+        capCell.innerHTML = numberWithCommas(parseFloat(response[i]["market_cap_usd"]));
+        volumeCell.innerHTML = numberWithCommas(parseFloat(response[i]["24h_volume_usd"]));
         redditNameCell.innerHTML = "--";
         redditSubCell.innerHTML = 0;
         ratioCell.innerHTML = 0.0;
@@ -95,6 +95,24 @@ window.onload = function() {
 
 function updateTable(){
    var data = dataTable.rows().data();
+
+   console.log(data);
+
+   for(i = 0; i < data.length; i++){
+      var coinName = data[i][0];
+      var coinTickerUrl = "https://api.coinmarketcap.com/v1/ticker/" + coinName;
+
+      // send request to coincap API for the current coin
+      $.getJSON(coinTickerUrl, function(result){ 
+
+      }).then(function(){
+        // update coin price
+        data[2] = 
+      });
+
+      
+
+   }
 }
 
 function numberWithCommas(x) {
