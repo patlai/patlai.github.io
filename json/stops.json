@@ -25949,17 +25949,6 @@
    "wheelchair_boarding": 1
  },
  {
-   "stop_id": "114092",
-   "stop_code": 52105,
-   "stop_name": "des Pins / Peel",
-   "stop_lat": 45.504808,
-   "stop_lon": -73.581767,
-   "stop_url": "http://m.stm.info/fr/horaires/arrets/52105/bus",
-   "location_type": 0,
-   "parent_station": "",
-   "wheelchair_boarding": 1
- },
- {
    "stop_id": "114098",
    "stop_code": 52106,
    "stop_name": "Peel / des Pins",
@@ -29159,17 +29148,6 @@
    "location_type": 0,
    "parent_station": "",
    "wheelchair_boarding": 2
- },
- {
-   "stop_id": "116011",
-   "stop_code": 52412,
-   "stop_name": "Robert-Bourassa / du Président-Kennedy",
-   "stop_lat": 45.50443,
-   "stop_lon": -73.57224,
-   "stop_url": "http://m.stm.info/fr/horaires/arrets/52412/bus",
-   "location_type": 0,
-   "parent_station": "",
-   "wheelchair_boarding": 1
  },
  {
    "stop_id": "116034",
